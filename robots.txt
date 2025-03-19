@@ -1,0 +1,6 @@
+// Add this to your generation process
+const robotsTxt = `User-agent: *
+Allow: /
+Sitemap: ${siteConfig.siteUrl}/sitemap.xml`;
+
+fs.writeFileSync(path.join(outputDir, 'robots.txt'), robotsTxt);

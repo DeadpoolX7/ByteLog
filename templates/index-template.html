@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteLog</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/dark-mode.css">
+    <script defer src="/assets/theme-toggle.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ByteLog</h1>
+        <button id="theme-toggle">🌙 </button>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <img src="/images/profile.jpg" alt="Profile Picture" class="profile-image">
+            <div class="profile-bio">
+                <h2>Hello, I'm Sanju</h2>
+                <p>Welcome to my blog where I share my thoughts on technology, programming, and web development. Feel free to explore my posts and get in touch!</p>
+            </div>
+        </section>
+
+        <section class="posts-section">
+          
+            {{posts}}
+        </section>
+
+     
+        {{pagination}}
+    </main>
+
+    <footer>
+        <p>© {{currentYear}} ByteLog</p>
+    </footer>
+</body>
+</html>

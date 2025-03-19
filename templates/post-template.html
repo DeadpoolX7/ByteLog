@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} | {{siteName}}</title>
+    <meta name="description" content="{{description}}">
+    <meta name="author" content="{{author}}">
+    <meta name="keywords" content="{{keywords}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="{{featuredImage}}">
+    <meta property="og:url" content="{{url}}">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:image" content="{{featuredImage}}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{url}}">
+
+    <!-- Existing styles -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/dark-mode.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{title}}",
+        "image": "{{featuredImage}}",
+        "datePublished": "{{isoDate}}",
+        "dateModified": "{{isoDate}}",
+        "author": {
+            "@type": "Person",
+            "name": "{{author}}"
+        },
+        "description": "{{description}}"
+    }
+    </script>
+
+    
+    <script defer src="/assets/theme-toggle.js"></script>
+</head>
+<body>
+    <header>
+        <h1>{{title}}</h1>
+        <button id="theme-toggle">🌙 </button>
+    </header>
+    <article>
+        {{content}}
+    </article>
+    <footer>
+        <p>© 2025 My Blog</p>
+    </footer>
+</body>
+</html>
