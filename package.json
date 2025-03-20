@@ -1,11 +1,11 @@
 {
-  "name": "blogSite",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ByteLog",
+  "version": "1.0.1",
+  "description": "Well optimized and fast blogging site.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "node generate.js",
+    "build": "node generate.js && cp _headers public/_headers",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
