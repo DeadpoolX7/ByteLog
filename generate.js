@@ -12,7 +12,7 @@ const templatePath = path.join(__dirname, "templates", "post-template.html");
 
 const siteConfig = {
     siteName: "My Blog",
-    siteUrl: "https://yourdomain.com",
+    siteUrl: "https://da2013ba.bytelog-cym.pages.dev",
     defaultAuthor: "Your Name",
     defaultImage: "/images/default-featured.jpg"
 };
