@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "node generate.js && copy _headers public\\_headers",
+    "build": "node generate.js && cpy _headers public/",
     "deploy": "wrangler pages deploy public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,7 @@
     "sharp": "^0.33.2"
   },
   "devDependencies": {
+    "cpy-cli": "^5.0.0",
     "nodemon": "^3.1.9",
     "wrangler": "^4.2.0"
   }
