@@ -48,3 +48,7 @@ Thumbs.db
 # Optional: Ignore generated images
 public/images/*
 !public/images/.gitkeep
+
+# Cloudflare
+.cloudflare/
+.wrangler/
