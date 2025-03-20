@@ -3,3 +3,5 @@ compatibility_date = "2025-03-19"
 
 [site]
 bucket = "./public"
+build.command = "npm run build"
+build.output = "public"
