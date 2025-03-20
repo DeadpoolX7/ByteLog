@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "node generate.js && cp _headers public/_headers",
+    "build": "node generate.js && copy _headers public\\_headers",
     "deploy": "wrangler pages deploy public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
