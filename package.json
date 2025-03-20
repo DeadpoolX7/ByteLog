@@ -17,11 +17,12 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
-    "marked": "^15.0.7",
     "gray-matter": "^4.0.3",
+    "marked": "^15.0.7",
     "sharp": "^0.33.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "wrangler": "^4.2.0"
   }
 }

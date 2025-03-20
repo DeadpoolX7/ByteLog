@@ -1,0 +1,5 @@
+name = "bytelog"
+compatibility_date = "2025-03-19"
+
+[site]
+bucket = "./public"
