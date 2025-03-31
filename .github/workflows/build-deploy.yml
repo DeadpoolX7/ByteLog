@@ -8,7 +8,7 @@ on:
       - 'generate.js'
       - '.github/workflows/build-deploy.yml'
     branches:
-      - main
+      - master
 
 jobs:
   build-deploy:
